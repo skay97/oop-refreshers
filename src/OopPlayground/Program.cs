@@ -11,7 +11,9 @@ namespace OopPlayground
         static void Main(string[] args)
         {
             var b = new Being();
-            Console.WriteLine($"this is b: {b}");
+            Console.WriteLine($"this is b - called without string param: {b}");
+
+            var b2 = new Being("Human");
 
             var p1 = new Person();
             // Person.Name is a public property with public setters, therefore we
@@ -35,6 +37,10 @@ namespace OopPlayground
             circle.SetRadius(5);
 
             Console.WriteLine($"this is the circle's area: {circle.Area()}");
+
+            // Illustrate inheritance concept
+            var d = new Derived();
+            d.Info();
         }
     }
 }
