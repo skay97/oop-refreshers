@@ -18,15 +18,20 @@ namespace OopPlayground
             // can explictly update the value outside of its class.
             p1.Name = "Salman";
 
+            // Person also has an age field which is private. If a member field is private,
+            // the only way to modify it is via methods. If we want to EXPLICITLY modify an attribute
+            // OUTSIDE of the class, the method must be declared public.
+            p1.SetAge(25);
+
             var p2 = new Person();
             p2.Name = "Eman";
 
-            Console.WriteLine($"this is p1.Name: {p1.Name}");
+            Console.WriteLine($"this is p1.Name: {p1.Name} and they are {p1.GetAge()} {(p1.GetAge() > 1 ?  "years" : "year")} old");
             Console.WriteLine($"this is p2.Name: {p2.Name}");
 
             Circle circle = new Circle();
-            // Circle.Radius is a private field which does not allow its value to be EXPLICITLY updated
-            // outside of the Circle class. Updating its value requires us to use the following public method 
+            // Circle.Radius is a private field which does not allow its value to be EXPLICITLY modified
+            // outside of the Circle class. Modifying its value requires us to use the following public method 
             circle.SetRadius(5);
 
             Console.WriteLine($"this is the circle's area: {circle.Area()}");
