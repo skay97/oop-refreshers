@@ -41,6 +41,11 @@ namespace OopPlayground
             // Illustrate inheritance concept
             var d = new Derived();
             d.Info();
+
+            // Instantiating the following instructs the constructor to set the values 
+            // for MyFriend.name and MyFriend.Born to the parameters MyFriend has been given
+            var friend = new MyFriend("Rooshna", new DateTime(1997, 1, 10));
+            friend.Info();
         }
     }
 }
