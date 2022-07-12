@@ -31,6 +31,7 @@ namespace OopPlayground
             Console.WriteLine($"this is p1.Name: {p1.Name} and they are {p1.GetAge()} {(p1.GetAge() > 1 ?  "years" : "year")} old");
             Console.WriteLine($"this is p2.Name: {p2.Name}");
 
+            new Circle(5);
             Circle circle = new Circle();
             // Circle.Radius is a private field which does not allow its value to be EXPLICITLY modified
             // outside of the Circle class. Modifying its value requires us to use the following public method 
