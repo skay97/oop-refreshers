@@ -12,12 +12,20 @@ namespace OopPlayground
         // provides a default constructor when none is provided
         //public User() { }
 
-        public string Name { set; get; }
-        public string Occupation {set; get;}
+        // Example of an expression-bodied constructor:
+        public User(string name, string occupation) =>
+            (Name, Occupation) = (name, occupation);
 
-        public override string ToString()
-        {
-            return $"{Name} is a {Occupation}";
-        }
+        private string Name { set; get; }
+        private string Occupation {set; get;}
+
+        //public override string ToString()
+        //{
+        //    return $"{Name} is a {Occupation}";
+        //}
+
+        // Updates override logic to use an expression instead of braces
+        public override string ToString() =>
+            $"User {Name} is a {Occupation}";
     }
 }

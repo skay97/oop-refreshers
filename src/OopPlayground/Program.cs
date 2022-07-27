@@ -52,8 +52,11 @@ namespace OopPlayground
             // This allows us to set values for a property/field without having to invoke a constructor.
             // The parenthesis after the user is not required since user does not have a constructor
             // with required values.
-            var u = new User() { Name = "Salman Karim", Occupation = "SWE" };
-            Console.WriteLine("THIS IS u: " + u);
+            //var u = new User() { Name = "Salman Karim", Occupation = "SWE" };
+            //Console.WriteLine("THIS IS u: " + u);
+
+            var u = new User("Salman Karim", "SWE");
+            Console.WriteLine("This is u: " + u);
         }
     }
 }
