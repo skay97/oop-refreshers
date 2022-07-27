@@ -10,6 +10,11 @@ namespace PartialClass
     {
         static void Main(string[] args)
         {
+            var worker = new Worker();
+
+            Console.WriteLine(worker.DoWork());
+            Console.WriteLine(worker.DoWork());
+            Console.WriteLine(worker.DoPause());
         }
     }
 }
