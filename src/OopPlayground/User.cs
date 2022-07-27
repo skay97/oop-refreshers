@@ -8,7 +8,7 @@ namespace OopPlayground
 {
     public class User
     {
-        // A paramerterless constructor is not needed since c# 
+        // A parameterless constructor is not needed since c# 
         // provides a default constructor when none is provided
         //public User() { }
 

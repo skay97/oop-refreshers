@@ -17,7 +17,7 @@ namespace OopPlayground
 
             var p1 = new Person();
             // Person.Name is a public property with public setters, therefore we
-            // can explictly update the value outside of its class.
+            // can explicitly update the value outside of its class.
             p1.Name = "Salman";
 
             // Person also has an age field which is private. If a member field is private,
@@ -49,8 +49,8 @@ namespace OopPlayground
             friend.Info();
 
             // We are using object initializers below to set values to accessible properties.
-            // This allows us to set values for a property/field without having to invoke a consturctor.
-            // The parenthesis after the user is not required since user does not have a constructor whule ammount 
+            // This allows us to set values for a property/field without having to invoke a constructor.
+            // The parenthesis after the user is not required since user does not have a constructor
             // with required values.
             var u = new User() { Name = "Salman Karim", Occupation = "SWE" };
             Console.WriteLine("THIS IS u: " + u);

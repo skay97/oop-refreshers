@@ -16,7 +16,7 @@ namespace OopPlayground
         }
 
         /// <summary>
-        /// Constructor chaning: this empty contrcutor calls another constructor that
+        /// Constructor chaining: this empty constructor calls another constructor that
         /// only takes an int and executes that constructor with the value of 1
         /// </summary>
         public Circle() : this(1) { }

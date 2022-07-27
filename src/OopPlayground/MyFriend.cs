@@ -23,7 +23,7 @@ namespace OopPlayground
         public void Info()
         {
             // We do not have to use the this prefix prior to referencing the following fields
-            // because they do not conflict with simillar name params/vars
+            // because they do not conflict with similar name params/vars
             Console.WriteLine("{0} was born on {1}", name, born.ToShortDateString());
         }
     }
