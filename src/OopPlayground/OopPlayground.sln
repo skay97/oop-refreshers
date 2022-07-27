@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopPlayground", "OopPlayground.csproj", "{FA80D692-8279-4D3C-A7F9-F98331CC1AC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClass", "..\AbstractClass\AbstractClass.csproj", "{B8CC74F8-3185-40EA-B6CE-AD2E965F851C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FA80D692-8279-4D3C-A7F9-F98331CC1AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA80D692-8279-4D3C-A7F9-F98331CC1AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA80D692-8279-4D3C-A7F9-F98331CC1AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8CC74F8-3185-40EA-B6CE-AD2E965F851C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CC74F8-3185-40EA-B6CE-AD2E965F851C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CC74F8-3185-40EA-B6CE-AD2E965F851C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CC74F8-3185-40EA-B6CE-AD2E965F851C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
