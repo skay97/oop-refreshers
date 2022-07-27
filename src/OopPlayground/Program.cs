@@ -47,6 +47,13 @@ namespace OopPlayground
             // for MyFriend.name and MyFriend.Born to the parameters MyFriend has been given
             var friend = new MyFriend("Rooshna", new DateTime(1997, 1, 10));
             friend.Info();
+
+            // We are using object initializers below to set values to accessible properties.
+            // This allows us to set values for a property/field without having to invoke a consturctor.
+            // The parenthesis after the user is not required since user does not have a constructor whule ammount 
+            // with required values.
+            var u = new User() { Name = "Salman Karim", Occupation = "SWE" };
+            Console.WriteLine("THIS IS u: " + u);
         }
     }
 }
