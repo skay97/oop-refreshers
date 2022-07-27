@@ -33,11 +33,11 @@ namespace OopPlayground
 
             new Circle(5);
             Circle circle = new Circle();
-            // Circle.Radius is a private field which does not allow its value to be EXPLICITLY modified
+            // Circle.Radius / Circle.r is a private field which does not allow its value to be EXPLICITLY modified
             // outside of the Circle class. Modifying its value requires us to use the following public method 
             circle.SetRadius(5);
 
-            Console.WriteLine($"this is the circle's area: {circle.Area()}");
+            //Console.WriteLine($"this is the circle's area: {circle.Area()}");
 
             // Illustrate inheritance concept
             var d = new Derived();
@@ -52,11 +52,26 @@ namespace OopPlayground
             // This allows us to set values for a property/field without having to invoke a constructor.
             // The parenthesis after the user is not required since user does not have a constructor
             // with required values.
+
             //var u = new User() { Name = "Salman Karim", Occupation = "SWE" };
             //Console.WriteLine("THIS IS u: " + u);
 
             var u = new User("Salman Karim", "SWE");
             Console.WriteLine("This is u: " + u);
+
+            // PI is a constant within the Math class. Given its public access modifier
+            // the const is available to us outside the Math class.
+            Console.WriteLine("this is Math.PI: " + Math.PI);
+
+            // When the following object is instantiated, the Being constructor is also called
+            // since Human inherits from Being.
+            new Human();
+
+            var dog = new Dog();
+            dog.GetCount(); // Will return three beings: line 67, 70 and 13
+
+            var c = new Circle(2, 5, 6);
+            Console.Write(c);
         }
     }
 }

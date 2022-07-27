@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace OopPlayground
 {
-    internal class Circle
+    internal class Circle : Shape
     {
-        private int radius;
+        //private int radius;
+        private int r;
 
         public Circle(int radius)
         {
             Console.WriteLine($"Circle, r={radius} is created");
         }
+
 
         /// <summary>
         /// Constructor chaining: this empty constructor calls another constructor that
@@ -21,14 +23,24 @@ namespace OopPlayground
         /// </summary>
         public Circle() : this(1) { }
 
+        public Circle(int radius, int x, int y) : base(x, y)
+        {
+            r = radius;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("Circle, r:{0}, x:{1}, y:{2}", r, x, y);
+        }
+
         public void SetRadius(int radius)
         {
-            this.radius = radius;
+            r = radius;
         }
 
         public double Area()
         {
-            return Math.PI * radius * radius;
+            return Math.PI * r * r;
         }
     }
 }
